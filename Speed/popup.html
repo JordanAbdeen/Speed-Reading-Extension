@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mainUI {
+        width: 100px;
+        height: 75px;
+        text-align: center;
+      }
+      button {
+        width: 85px;
+        height: 25px;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        font-weight: bold;
+      }
+      #slider {
+          margin: 10px auto;
+          width: 100%;
+      }
+      #myRange {
+          margin: 10px auto;
+          width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainUI">
+      <h2>SpeedRead</h2>
+      <button id="bionic">Highlight</button>
+      <div id="slider">
+        <p>Control the ratio of characters</p>
+        <input type="range" min="0" max="100" value="50" id="myRange" />
+      </div>
+    </div>
+    <script src="./popup.js"></script>
+  </body>
+</html>

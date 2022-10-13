@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "SpeedRead",
+    "description": "Highlights the initial letters of a word, letting the reader's brain automatically complete the word. Ultimately speeding up the process of reading.",
+    
+    "version": "1.0",
+    "icons": {
+        "16": "/images/16.png",
+        "48": "/images/48.png",
+        "128": "/images/128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "/images/16.png",
+            "48": "/images/48.png",
+            "128": "/images/128.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "Read faster."
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["/contentScript.js"]
+    }
+    ]
+}
